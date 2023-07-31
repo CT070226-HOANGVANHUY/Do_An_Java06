@@ -12,8 +12,10 @@ import java.util.Scanner;
  */
 public class DoAnNhom6 {
 
+    public static void ouput(){
+        
+    }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Hello nhom 6!");
     }
 }
