@@ -11,11 +11,9 @@ import java.util.Scanner;
  * @author Admin
  */
 public class DoAnNhom6 {
-
-    public static void ouput(){
-        System.out.println("git pull");
-    }
     public static void main(String[] args) {
-        System.out.println("Hello nhom 6!");
+        
     }
+
+   
 }
