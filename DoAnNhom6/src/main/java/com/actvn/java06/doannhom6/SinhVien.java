@@ -13,22 +13,19 @@ import java.time.LocalDate;
 public class SinhVien {
     private String MaSV;
     private String Name;
-    private String Lop;
     private String Gioitinh;
-    private QueQuan quequan;
+    private String quequan;
     private LocalDate Ngaysinh;
-    private String MaKhoa;
+   
 
-    public SinhVien(String MaSV, String Name, String Lop, String Gioitinh, QueQuan quequan, LocalDate Ngaysinh, String MaKhoa) {
+
+    public SinhVien(String MaSV, String Name, String Gioitinh, String quequan, LocalDate Ngaysinh) {
         this.MaSV = MaSV;
         this.Name = Name;
-        this.Lop = Lop;
         this.Gioitinh = Gioitinh;
         this.quequan = quequan;
         this.Ngaysinh = Ngaysinh;
-        this.MaKhoa = MaKhoa;
     }
-    
 
     public String getMaSV() {
         return MaSV;
@@ -46,14 +43,6 @@ public class SinhVien {
         this.Name = Name;
     }
 
-    public String getLop() {
-        return Lop;
-    }
-
-    public void setLop(String Lop) {
-        this.Lop = Lop;
-    }
-
     public String getGioitinh() {
         return Gioitinh;
     }
@@ -62,11 +51,11 @@ public class SinhVien {
         this.Gioitinh = Gioitinh;
     }
 
-    public QueQuan getQuequan() {
+    public String getQuequan() {
         return quequan;
     }
 
-    public void setQuequan(QueQuan quequan) {
+    public void setQuequan(String quequan) {
         this.quequan = quequan;
     }
 
@@ -78,12 +67,14 @@ public class SinhVien {
         this.Ngaysinh = Ngaysinh;
     }
 
-    public String getMaKhoa() {
-        return MaKhoa;
+    @Override
+    public String toString() {
+        return "SinhVien{" + "MaSV=" + MaSV + ", Name=" + Name + ", Gioitinh=" + Gioitinh + ", quequan=" + quequan + ", Ngaysinh=" + Ngaysinh + '}';
     }
+    
 
-    public void setMaKhoa(String MaKhoa) {
-        this.MaKhoa = MaKhoa;
-    }
+   
+
+    
     
 }
