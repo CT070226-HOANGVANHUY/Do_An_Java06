@@ -1,8 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.actvn.java06.doannhom6;
+
+
 
 import java.time.LocalDate;
 
@@ -13,18 +11,21 @@ import java.time.LocalDate;
 public class SinhVien {
     private String MaSV;
     private String Name;
-    private String Gioitinh;
-    private String quequan;
-    private LocalDate Ngaysinh;
+    private String gioiTinh;
+    private String queQuan;
+    private LocalDate ngaySinh;
+    private String email;
+    private double GPA;
    
 
 
-    public SinhVien(String MaSV, String Name, String Gioitinh, String quequan, LocalDate Ngaysinh) {
+    public SinhVien(String MaSV, String Name, String gioiTinh, String queQuan, LocalDate ngaySinh, String email) {
         this.MaSV = MaSV;
         this.Name = Name;
-        this.Gioitinh = Gioitinh;
-        this.quequan = quequan;
-        this.Ngaysinh = Ngaysinh;
+        this.gioiTinh = gioiTinh;
+        this.queQuan = queQuan;
+        this.ngaySinh = ngaySinh;
+        this.email = email;
     }
 
     public String getMaSV() {
@@ -44,37 +45,59 @@ public class SinhVien {
     }
 
     public String getGioitinh() {
-        return Gioitinh;
+        return gioiTinh;
     }
 
-    public void setGioitinh(String Gioitinh) {
-        this.Gioitinh = Gioitinh;
+    public void setGioitinh(String gioiTinh) {
+        this.gioiTinh = gioiTinh;
     }
 
     public String getQuequan() {
-        return quequan;
+        return queQuan;
     }
 
-    public void setQuequan(String quequan) {
-        this.quequan = quequan;
+    public void setQuequan(String queQuan) {
+        this.queQuan = queQuan;
     }
 
     public LocalDate getNgaysinh() {
-        return Ngaysinh;
+        return ngaySinh;
     }
 
-    public void setNgaysinh(LocalDate Ngaysinh) {
-        this.Ngaysinh = Ngaysinh;
-    }
-
-    @Override
-    public String toString() {
-        return "SinhVien{" + "MaSV=" + MaSV + ", Name=" + Name + ", Gioitinh=" + Gioitinh + ", quequan=" + quequan + ", Ngaysinh=" + Ngaysinh + '}';
+    public void setNgaysinh(LocalDate ngaySinh) {
+        this.ngaySinh = ngaySinh;
     }
     
 
-   
+    public String getEmail() {
+        return email;
+    }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public double getGPA() {
+        return GPA;
+    }
+
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SinhVien{");
+        sb.append("MaSV=").append(MaSV);
+        sb.append(", Name=").append(Name);
+        sb.append(", Gioitinh=").append(gioiTinh);
+        sb.append(", quequan=").append(queQuan);
+        sb.append(", Ngaysinh=").append(ngaySinh);
+        sb.append(", email=").append(email);
+        sb.append(", GPA=").append(GPA);
+        sb.append('}');
+        return sb.toString();
+    }
     
     
 }
